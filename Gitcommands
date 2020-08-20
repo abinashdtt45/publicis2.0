@@ -1,0 +1,46 @@
+git init
+git add .
+git commit -m "Master"
+git remote add upstream https://github.com/abinashdtt45/week-1-git.git
+git pull
+git push --force upstream master
+git pull
+git pull upstream master
+git branch develop
+git checkout develop
+git add .
+git commit -m "develop"
+git push upstream develop
+git branch delivery
+git checkout delivery
+git add .
+git commit -m"delivery"
+git push upstream delivery
+git branch feature
+git checkout feature
+git add .
+git commit -m "feature"
+git push upstream feature
+git branch production
+git checkout production
+git add .
+git commit -m "produciton"
+git push upstream production
+git branch qa
+git checkout qa
+git add .
+git commit -m "qa"
+git push upstream qa
+git checkout master
+git pull
+git pull upstream master
+git pull
+git pull upstream
+git pull upstream master
+git fetch
+git rebase master
+git checkout develop
+git rebase master
+git pull
+git commit -m "rebased"
+git pull upstream develop
