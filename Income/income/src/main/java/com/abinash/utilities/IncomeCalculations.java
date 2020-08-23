@@ -12,16 +12,6 @@ public class IncomeCalculations implements Comparator<String> {
 		return (int) Double.parseDouble(arr[2]) - (int) Double.parseDouble(arr1[2]);
 	}
 
-	public static String sort(String str) {
-
-		String[] arr = str.split("\n");
-		Arrays.sort(arr);
-		str = "";
-		for (int i = 0; i < arr.length; i++) {
-			str = str + arr[i] + "\n";
-		}
-		return str;
-	}
 
 	public static String sortIncome(String str) {
 
@@ -45,6 +35,31 @@ public class IncomeCalculations implements Comparator<String> {
 			return (n / 8.0);
 		else
 			return null;
+
+	}
+
+	public static String  averageIncome(String s) {
+		String[] averageStrings = s.split("\n");
+		int maleCount=0,femaleCount=0;
+		double maleSum = 0,femaleSum=0;
+		String countryString = "";
+		countryString = averageStrings[0].split(",")[0];
+
+		for(String lineString : averageStrings) {
+			if (lineString.split(",")[1].equalsIgnoreCase("M")) {
+				maleCount++;
+				maleSum += Double.parseDouble(lineString.split(",")[2]);
+			}else {
+				femaleCount++;
+				femaleSum += Double.parseDouble(lineString.split(",")[2]);
+			}
+		}
+		double maleAverage = maleSum / maleCount;
+		double femaleAverage = femaleSum / femaleCount;
+		String anString = countryString + "," + "M" + "," + Double.toString(maleAverage) + "\n" + countryString + ","
+				+ "F" + "," + Double.toString(femaleAverage) + "\n";
+
+		return anString;
 
 	}
 

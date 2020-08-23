@@ -39,12 +39,12 @@ public class WriteOutput {
 
 	public static void answerLog() throws IOException {
 
-		uk = IncomeCalculations.sortIncome(uk);
-		india = IncomeCalculations.sortIncome(india);
-		hk = IncomeCalculations.sortIncome(hk);
-		sg = IncomeCalculations.sortIncome(sg);
-		String out = hk + india + sg + uk;
-		System.out.println(out);
+		String answeString = IncomeCalculations.averageIncome(uk) + IncomeCalculations.averageIncome(india)
+				+ IncomeCalculations.averageIncome(hk) + IncomeCalculations.averageIncome(sg);
+		System.out.println("Printing average income");
+		System.out.println(answeString);
+		String out = IncomeCalculations.sortIncome(answeString);
+
 		try {
 			FileWriter fw = new FileWriter("/Users/abinash/publicis2.0/Income/income/Sample_Output.csv");
 			fw.write(out);
@@ -52,7 +52,7 @@ public class WriteOutput {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		System.out.println("Success...");
+		System.out.println("SUCCESS");
 	}
 
 }
