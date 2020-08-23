@@ -1,11 +1,14 @@
 pipeline {
     agent any 
     stages {
+    tools { 
+        maven 'Maven 3.6.0' 
+        jdk 'jdk8' 
+    }
         stage('Build') { 
-            steps {
-                withMaven(maven : 'M3') {
-                	zsh 'mvn clean install'
-                } 
+            steps {           
+                zsh 'mvn clean install'
+               
             }
         }
         
