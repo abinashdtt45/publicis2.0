@@ -1,0 +1,51 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.abinash:date-time-calculator >------------------
+[INFO] Building date-time-calculator 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ date-time-calculator ---
+[INFO] Deleting /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ date-time-calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ date-time-calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ date-time-calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ date-time-calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ date-time-calculator ---
+[INFO] Surefire report directory: /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.abinash.date_time_calculator.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ date-time-calculator ---
+[INFO] Building jar: /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/target/date-time-calculator-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ date-time-calculator ---
+[INFO] Installing /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/target/date-time-calculator-0.0.1-SNAPSHOT.jar to /Users/abinash/.m2/repository/com/abinash/date-time-calculator/0.0.1-SNAPSHOT/date-time-calculator-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator/pom.xml to /Users/abinash/.m2/repository/com/abinash/date-time-calculator/0.0.1-SNAPSHOT/date-time-calculator-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.489 s
+[INFO] Finished at: 2020-08-23T15:28:58+05:30
+[INFO] ------------------------------------------------------------------------
