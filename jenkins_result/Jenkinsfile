@@ -1,0 +1,16 @@
+pipeline {
+    agent any 
+    tools { 
+        maven 'M3' 
+        jdk 'JAVA_HOME' 
+    }
+    stages { 
+        stage('Build') { 
+            steps { 
+                sh 'mvn -f DateTimeCalculator/date-time-calculator/pom.xml clean install'
+               
+            }
+        }
+        
+    }
+}
