@@ -61,7 +61,7 @@ OMR      - 7a1b0239a
 JCL      - 8cf8a30581 based on jdk8u242-b08"/>
     <property name="maven.home" value="/Users/abinash/maven/apache-maven-3.6.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -o install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f DateTimeCalculator/date-time-calculator/pom.xml install"/>
     <property name="java.class.path" value="/Users/abinash/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.vm.specification.version" value="1.8"/>
@@ -73,7 +73,7 @@ JCL      - 8cf8a30581 based on jdk8u242-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="ibm.signalhandling.rs" value="false"/>
     <property name="java.ext.dirs" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8-openj9.jdk/Contents/Home/jre/lib/ext"/>
-    <property name="user.dir" value="/Users/abinash/publicis2.0/DateTimeCalculator/date-time-calculator"/>
+    <property name="user.dir" value="/Users/abinash/publicis2.0"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.name" value="Eclipse OpenJ9 VM"/>
