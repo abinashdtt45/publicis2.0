@@ -7,7 +7,7 @@ pipeline {
     stages { 
         stage('Build') { 
             steps { 
-                sh 'cd /DateTimeCalculator/date-time-calculator/'      
+                sh 'ls'      
                 sh 'mvn clean install'
                
             }
