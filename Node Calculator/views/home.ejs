@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Date Calculator
+            </title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <link href="./css/style.css" rel="stylesheet">
+                    <script src="./js/calculations.js" type="text/javascript">
+                    </script>
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <center>
+                    <div class="calculator">
+                        <div class="display">
+                            <input id="display" multiple="" readonly="" type="text">
+                            </input>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>
+                                    <input onclick="cls('')" style="background-color: red;color: white" type="button" value="C"/>
+                                </th>
+                                <th colspan="2">
+                                    <label for="cars" style="width:90px;background-color: red;color: white">
+                                        Select Type : 
+                                    </label>
+                                    <select id="type" name="type" value="0">
+                                        <option value="0">
+                                            Date
+                                        </option>
+                                        <option value="1">
+                                            Days
+                                        </option>
+                                        <option value="2">
+                                            Weeks
+                                        </option>
+                                        <option value="3">
+                                            Months
+                                        </option>
+                                        <option value="4">
+                                            Year
+                                        </option>
+                                    </select>
+                                </th>
+                                <th>
+                                    <input onclick="del()" style="background-color:crimson;color: white;" type="button" value="DEL"/>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input onclick="math('1')" type="button" value="1"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('2')" type="button" value="2"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('3')" type="button" value="3"/>
+                                </td>
+                                <th>
+                                    <input onclick="math('+')" style="background-color: orange;color: white;" type="button" value="+"/>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input onclick="math('4')" type="button" value="4"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('5')" type="button" value="5"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('6')" type="button" value="6"/>
+                                </td>
+                                <th>
+                                    <input onclick="math('-')" style="background-color: orange;color: white;" type="button" value="-"/>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input onclick="math('7')" type="button" value="7"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('8')" type="button" value="8"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('9')" type="button" value="9"/>
+                                </td>
+                                <th>
+                                    <input onclick="findWeek()" style="background-color: orange;color: white;" type="button" value="Week"/>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input onclick="math('0')" type="button" value="0"/>
+                                </td>
+                                <td>
+                                    <input onclick="math('/')" type="button" value="/"/>
+                                </td>
+                                <td></td>
+                                <th>
+                                    <input onclick="findDay()" style="background-color: orange;color: white;" type="button" value="Day"/>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <input onclick="equal()" style="width: 90px;background-color: green;color: white;" type="button" value="="/>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </body>
+</html>
+<div class="col-3">
+</div>
